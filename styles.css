@@ -3,16 +3,27 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #ddd;
   min-height: 100vh;
   font-size: 18px;
   font-family: Oswald, Roboto, Arial, Helvetica, sans-serif;
   margin: 50px;
+  min-height: 1600px;
 }
 
 img {
   width: 100%;
+}
+
+#nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 /* container */
@@ -126,6 +137,11 @@ span:nth-child(3).slide {
   padding: 50px;
 }
 
+.video {
+  margin: auto;
+  position: relative;
+}
+
 .hero > * {
   display: none;
 }
@@ -216,6 +232,11 @@ span:nth-child(3).slide {
     color: #eaeaea;
     padding: 5px;
     margin-bottom: 10px;
+  }
+
+  .hero img {
+    background-color: transparent;
+    width: 100px;
   }
 
   .hero {
